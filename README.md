@@ -55,3 +55,19 @@ Los ejercicios pueden filtrarse mediante query strings:
 GET /api/v1/exercises?category=strength
 GET /api/v1/exercises?muscleGroup=chest
 GET /api/v1/exercises?search=press
+## Progreso
+
+| Método | Endpoint | Descripción |
+|---|---|---|
+| GET | `/api/v1/progress` | Listar todo el progreso |
+| GET | `/api/v1/progress/:id` | Obtener un registro de progreso por ID |
+| POST | `/api/v1/progress` | Crear un registro de progreso |
+| PUT | `/api/v1/progress/:id` | Actualizar un registro de progreso |
+| DELETE | `/api/v1/progress/:id` | Eliminar un registro de progreso |
+
+### Filtros
+
+El progreso puede filtrarse mediante query strings:
+
+```text
+GET /api/v1/progress?userId=ID
