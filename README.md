@@ -37,3 +37,21 @@ GET /api/v1/workouts?status=pending
   "email": "prueba@example.com",
   "role": "user"
 }
+## Ejercicios
+
+| Método | Endpoint | Descripción |
+|---|---|---|
+| GET | `/api/v1/exercises` | Listar todos los ejercicios |
+| GET | `/api/v1/exercises/:id` | Obtener un ejercicio por ID |
+| POST | `/api/v1/exercises` | Crear un ejercicio |
+| PUT | `/api/v1/exercises/:id` | Actualizar un ejercicio |
+| DELETE | `/api/v1/exercises/:id` | Eliminar un ejercicio |
+
+### Filtros
+
+Los ejercicios pueden filtrarse mediante query strings:
+
+```text
+GET /api/v1/exercises?category=strength
+GET /api/v1/exercises?muscleGroup=chest
+GET /api/v1/exercises?search=press
